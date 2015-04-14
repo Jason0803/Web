@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Affiliations</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="description" content="Original Hover Effects with CSS3" />
+<meta name="keywords" content="css3, transitions, thumbnail, animation, hover, effect, description, caption" />
+ <meta name="author" content="Alessio Atzeni for Codrops" />
+
+<link href="Affiliations.css"rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body>
+<img src="../Home/background_image.png"  id="bg" alt=""/>
+<div id="wrapper">
+   <div id="header"> <a href="../index.html"><img src="../Home/air_logo.png"style="margin-top: 25px; margin-left:15px; margin-right:10px;" width="200" height="100" /></a><img src="../Home/logo2.png" width="750" height="120" alt=""/>
+   </div>
+          
+   
+    <div id="navigation"> 
+      <div id='navi'>
+  <ul>
+    <div class ='home'>
+      <li class="active"><a href="../Home/home.html"><img src="../Home/home_navi.png" width="90" height="170" alt=""/></a></li>
+    </div>
+    <div class ='about'>
+      <li><a href="#">
+      <img src="../Home/about_navi.png" width="90" height="120" alt=""/> </a>
+        <ul>
+          <li><a href="../Annual Reports/Annual Reports.html">Annual Reports</a></li>
+          <li><a href="../Contact/contact.html">Contact</a></li>
+          <li><a href="../For Business/For Business.html">For Business</a></li>
+          <li><a href="../Members/Members.php">Members</a></li>
+          <li><a href="Affiliations.html">Affiliations</a></li>
+        </ul>
+      </li>
+    </div>
+    <div class ='events'>
+      <li><a href="#"><img src="../Home/events_navi.png" width="90" height="120" alt=""/>
+       </a>
+        <ul>
+          <li><a href="../Conferences/Conferences.html">Conferences</a></li>
+          <li><a href="../Seminars/Seminars.html">Seminars</a></li>
+        </ul>
+      </li>
+    </div>
+    <div class ='research'>
+      <li><a href="#"><img src="../Home/research_navi.png" width="90" height="170" alt=""/></a>
+        <ul>
+          <li><a href="../Working Papers/Working Papers.html">Working Papers</a></li>
+          <li><a href="../Current Projects/Current Projects.html">Current Projects</a></li>
+          <li><a href="../Publication/publication.php">Publications</a></li>
+          <li><a href="../Future Projects/Future Projects.html">Future Projects</a></li>
+        </ul>
+      </li>
+    </div>
+  </ul>
+</div>
+    </div>
+    
+    <div id="main"> 
+       
+		<h1> Affiliations</h1>
+        <div class="contentbox"> 
+        <h2>The Interdisciplinary Machine Learning Research Group</h2>
+<h4>The Interdisciplinary Machine Learning Research Group<a href="http://www.newcastle.edu.au/research-and-innovation/centre/engineering-built-environment/interdisciplinary-machine-learning"  style="color: #000000; font-size: larger; font-weight: bolder; text-decoration:underline">&nbsp;(IMLRG)</a> investigates different aspects of machine learning and data mining in theory, experiments and applications. Particular emphasis is placed on interdisciplinary projects.</h4>
+        
+ <h2>Newcastle Robotics Laboratory</h2>
+ <h4>The <a href="http://www.newcastle.edu.au/research-and-innovation/centre/engineering-built-environment/newcastle-robotics-laboratory"  style="color: #000000; font-size: larger; font-weight: bolder; text-decoration:underline">&nbsp; Newcastle Robotics Laboratory </a>is an interdisciplinary research and training initiative of several robotics related research teams from different research areas including applied mathematics, architecture, computer science, control, electrical engineering, neuroscience, mechatronics and software engineering. </h4>
+        </div>
+
+                   
+                </br>
+                <a href="#" class="back-to-top"><img src="top.png" width="30" height="30" alt=""/></a>
+                <script>            
+			jQuery(document).ready(function() {
+				var offset = 220;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.back-to-top').fadeIn(duration);
+					} else {
+						jQuery('.back-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+		</script>
+                
+        
+    </div>
+     
+<div id="footer"><img src="../Home/footer.png" width="1000" height="45" alt="" style="padding-top:100px"> </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* CSS Document */
+#wrapper{
+    width:1000px;
+	margin: 0 auto 0 auto;
+	margin-top:30px;
+	position:relative;
+    background-color:#FFFFFF;
+}
+#header{
+  position:relative;
+  width:1000px;
+  height:150px;
+  background-color:#ffffff;	
+}
+
+#navigation{
+	position:absolute;
+	width: 240px;
+	height: auto;
+	background-color: #ffffff;
+	z-index: 100;
+
+}
+#main{
+	position:relative;
+	width: 760px;
+	height: auto;
+	margin-left: 240px;
+}
+#footer{
+  position:relative;
+  clear:both;
+  width:1000px;
+  height:150px;
+  background-color:#ffffff;	
+}
+#bg{
+	width: 100%;
+	position: fixed;
+	z-index: -100;
+	left: 0px;
+	top: 0px;
+	min-height:100%;
+	min-width:1040px;
+}
+#navi, #navi ul, #navi ul li, #navi ul li a {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+#navi > ul ul {
+  position: absolute;
+  left: 100%;
+  top: -9999px;
+  padding-left: 2px;
+  opacity: 0;
+  width: 150px;
+  list-style: none;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+  margin-top:30px;
+  font-size:15px;
+  
+}
+ 
+#navi > ul li:hover > ul {
+  top: 0px;
+  opacity: 1;
+  z-index: 1;
+}
+
+
+#navi a {
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+#navi a:link {
+	color: #666;
+	text-decoration: none;
+}
+#navi a:visited {
+	text-decoration: none;
+	color: #666;
+}
+#navi a:hover {
+	text-decoration: none;
+	color: #000;
+	font-weight:bolder;
+}
+#navi a:active {
+	text-decoration: none;
+	color: #999;
+}
+
+
+.home {
+	position: absolute;
+	list-style: none;
+	margin-top: 20px;
+	top: -19px;
+	margin-left: 40px;
+}
+.about {
+	position: absolute;
+	list-style: none;
+	top: 150px;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+.events {
+	position: absolute;
+	list-style: none;
+	top: 270px;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+.research {
+	position: absolute;
+	list-style: none;
+	top: 389px;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+#main > h1{
+	color: #8E8E8E;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 40px;
+	text-align: left;
+}
+		.back-to-top {
+			position: fixed;
+			bottom: 2em;
+			right: 0px;
+			text-decoration: none;
+			color: #000000;
+			background-color: rgba(235, 235, 235, 0.80);
+			font-size: 12px;
+			padding: 1em;
+			display: none;
+		}
+
+		.back-to-top:hover {	
+			background-color: rgba(135, 135, 135, 0.50);
+		}	

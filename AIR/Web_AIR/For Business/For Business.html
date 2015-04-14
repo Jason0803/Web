@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Business</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="description" content="Original Hover Effects with CSS3" />
+<meta name="keywords" content="css3, transitions, thumbnail, animation, hover, effect, description, caption" />
+ <meta name="author" content="Alessio Atzeni for Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+
+<link href="For Business.css"rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body>
+<img src="../Home/background_image.png"  id="bg" alt=""/>
+<div id="wrapper">
+   <div id="header"> <a href="../index.html"><img src="../Home/air_logo.png"style="margin-top: 25px; margin-left:15px; margin-right:10px;" width="200" height="100" /></a><a href="../Home/home.html"><img src="../Home/logo2.png" width="750" height="120" alt=""/></a>
+   </div>
+          
+   
+    <div id="navigation"> 
+      <div id='navi'>
+  <ul>
+    <div class ='home'>
+      <li class="active"><a href="../Home/home.html"><img src="../Home/home_navi.png" width="90" height="170" alt=""/></a></li>
+    </div>
+    <div class ='about'>
+      <li><a href="#">
+      <img src="../Home/about_navi.png" width="90" height="120" alt=""/> </a>
+        <ul>
+          <li><a href="../Annual Reports/Annual Reports.html">Annual Reports</a></li>
+          <li><a href="../Contact/contact.html">Contact</a></li>
+          <li><a href="For Business.html">For Business</a></li>
+          <li><a href="../Members/Members.php">Members</a></li>
+          <li><a href="../Affiliations/Affiliations.html">Affiliations</a></li>
+        </ul>
+      </li>
+    </div>
+    <div class ='events'>
+      <li><a href="#"><img src="../Home/events_navi.png" width="90" height="120" alt=""/>
+       </a>
+        <ul>
+          <li><a href="../Conferences/Conferences.html">Conferences</a></li>
+          <li><a href="../Seminars/Seminars.html">Seminars</a></li>
+        </ul>
+      </li>
+    </div>
+    <div class ='research'>
+      <li><a href="#"><img src="../Home/research_navi.png" width="90" height="170" alt=""/></a>
+        <ul>
+          <li><a href="../Working Papers/Working Papers.html">Working Papers</a></li>
+          <li><a href="../Working Papers/Working Papers.html">Current Projects</a></li>
+          <li><a href="../Publication/publication.php">Publications</a></li>
+          <li><a href="../Future Projects/Future Projects.html">Future Projects</a></li>
+        </ul>
+      </li>
+    </div>
+  </ul>
+</div>
+    </div>
+    
+    <div id="main"> 
+       
+		<h1> For Business</h1>
+        <div class="contentbox"> 
+        <h4>   	Every business activity generates data. In the modern world this means much diverse digital data gathered from systems that deal with production, maintenance, sales, customers, competitors, projects and employees. For example, customer demand fluctuates along with sales, trucks pick up and deliver goods at specific times, packages are tracked from source to destination, maintenance is scheduled and projects need to keep track of milestones and budgets. One of the keys to business success is to maximize the benefits of the data the business collects. Every dataset tells a story, the story of an organization - how efficient the processes are, what is working, what is not. However, that story is often hidden in a mass of data. Business managers often do not have the time or tools to dig deeper. For the business that can leverage this potential the rewards are clear. Research in Information Technology has yielded new methods that can be applied to business analysis and help provide a competitive edge. The Applied Informatics Research Group has the knowledge, experience and commitment to work with businesses and help leverage this potential.</br></br><a href="http://www.newcastle.edu.au" class="info" style="color: #000000; font-size: larger; font-weight: bolder; text-decoration:underline">The University of Newcastle</a>, Australia has a high reputation for assisting businesses with relevant and targeted research. The Applied Informatics Research Group can help to leverage the potential of data within organizations in order to provide them with a competitive edge. We can assist businesses through student placements, sharing results of research, contracted research, and research supported by joint funding opportunities.</br></br>
+To find out more, please <a href="#contact modal" class="info" style="color: #000000; font-size: larger; font-weight: bolder; text-decoration:underline">contact</a> us. </h4></div>
+
+<div id="contact modal" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+
+        	<h1>Contact
+            <a href="../Contact/contact.html" style="font-size: smaller; text-decoration: underline; font-weight: bolder; color: #5B5B5B;"" >&nbsp;More</a></h1>
+
+        <p><strong>Dr David J Cornforth</strong> </br>
+School of Design, Communication and IT</br>
+University of Newcastle</br>
+Australia</br>
+Phone: +61 2 4985 4069</br>
+Email: David.Cornforth@newcastle.edu.au</p>
+ <p><strong>Dr Raymond Chiong</strong></br>
+School of Design, Communication and IT</br>
+University of Newcastle</br>
+Australia</br>
+Phone: +61 2 4921 7367</br>
+Email: Raymond.Chiong@newcastle.edu.au</p>
+       
+    </div>
+</div>    
+
+                   
+                </br>
+                <a href="#" class="back-to-top"><img src="top.png" width="30" height="30" alt=""/></a>
+                <script>            
+			jQuery(document).ready(function() {
+				var offset = 220;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.back-to-top').fadeIn(duration);
+					} else {
+						jQuery('.back-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+		</script>
+                
+        
+    </div>
+     
+ <div id="footer"><img src="../Home/footer.png" width="1000" height="45" alt="" style="padding-top:100px"> </div>
+</div>
+</body>
+</html>
