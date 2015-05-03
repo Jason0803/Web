@@ -1,4 +1,5 @@
 // What I've mainly focused on, for AIR Redevelopment Project -- Jason //
+// These lines of comments are supposed to be ignored, not to be used  //
 
 <!DOCTYPE html>
 <html>
