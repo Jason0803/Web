@@ -6,12 +6,14 @@
   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="./css/home.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./js/chattingScript.js"></script>
+  <script type="text/javascript" src="./js/signUp.js"></script>
 </head>
 <body>
-
+<img src="./image/background_image.png" id="bg" alt="">
 <!-- For Navigation Bar ... -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -26,12 +28,12 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <!-- <li><a id="kakao-login-btn">Kakao</a></li> -->
-          <li><a href="#" id="kakao-login-btn"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> 
-          
+          <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+          <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal_SignIn"><span class="glyphicon glyphicon-log-in"></span> Login</button></li> 
        </ul>
       </div>
   </nav>
+
 
 
 <!-- For Navigation Bar ... -->
@@ -86,9 +88,31 @@
     <p>3. ddd</p> 
   </div>
 
+<div id="footer" align="center"><b>KOStudent by Jason Choi.</b></div>
 </div>
 
+<!-- Modal for Sign-in -->
+<div class="modal fade" id="modal_SignIn" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Log-In Anonymously</h4>
+      </div>
+      <div class="modal-body">
+        <p>Name : <input type="text" name="id"></p>
+        <p>Password : <input type="password" name="pw"></p>
+        <!-- Hidden should be here to send IP address-->
+      </div>
+      <div class="modal-footer">
+        <input type="submit" value="Log In" data-dismiss="modal">
 
+      </div>
+    </div>
+  </div>
+</div> 
+<!-- Modal -->
 
 
 </body>
